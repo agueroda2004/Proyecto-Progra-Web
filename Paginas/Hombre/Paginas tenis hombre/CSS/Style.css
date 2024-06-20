@@ -1,7 +1,8 @@
 body {
     margin: 0;
+    padding-top: 90px;
+    font-family: sans-serif;
 }
-
 .box__Menu {
     background-color: white;
     width: 100%;
@@ -10,12 +11,12 @@ body {
     justify-content: end;
     box-shadow: 0 0 7px gray;
     position: fixed;
+    top: 0;
 }
 
 .img__LogoMenu {
     width: 90px;
     height: 70px;
-    margin: 0;
     position: sticky;
     right: 92%;
 }
@@ -43,81 +44,82 @@ body {
     text-decoration: underline;
 }
 
-.div__ContenedorCalzado {
+.box__tenis {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img__Calzado {
-    margin-top: 7%;
-    width: 89%;
+    margin: auto;
+    width: 68%;
+    height: 55vh;
+    margin-top: 10vh;
+    padding: 10px;
+    border-radius: 2px;
     box-shadow: 0 0 5px gray;
 }
 
-.box__tenis {
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.img__teni {
+    margin-top: 3.2%;
+    margin-left: 10px;
+    height: 50vh;
+    margin-right: 1%;
+    border-radius: 2px;
+}
+
+.box__informaciontenis {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 80%;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 15rem;
 }
 
-.link__teni {
-    text-decoration: none;
-    width: 17%;
+.texto__informacion {
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 5%;
 }
 
-.item__tenis {
+.box__tallasBoton {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5%;
+}
+
+.Tallas button {
+    background-color: black;
+    border: 2px solid #fff;
+    color: lightgray;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.Tallas button:hover {
+    background-color: gray;
+    color: black;
+}
+
+.button__agregarCarrito {
+    font-family: sans-serif;
+    font-size: 20px;
     width: 100%;
-    height: 21rem;
-    box-shadow: 0 0 3px gray;
-    transition: box-shadow 0.2s ease;
+    height: 8vh;
+    margin-top: 2%;
+    background-color: black;
+    color: lightgray;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 2px;
 }
 
-.item__tenis:hover {
-    box-shadow: 0 0 0 1px black;
+.button__agregarCarrito:hover {
+    background-color: gray;
+    color: black;
     cursor: pointer;
 }
 
-.box__centrarTenis {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.img__tenis {
-    width: 50%;
-    height: 11rem;
-}
-
-.texto__descripcionTenis {
-    margin-top: 2px;
-    margin-left: 11%;
-    color: gray;
-    font-family: sans-serif;
-    font-size: 13px;
-}
-
-.texto__precio {
-    color: black;
-    font-weight: bold;
-    font-size: 17px;
-}
-
-.box__contactos {
-    background-color: black;
-    width: 100%;
-    height: 15rem;
-}
-
 footer {
+    margin-top: 24vh;
     box-shadow: 0 0 10px gray;
     position: static;
 }
