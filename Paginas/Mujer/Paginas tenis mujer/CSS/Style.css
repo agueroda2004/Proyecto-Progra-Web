@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    padding-top: 90px;
+    font-family: sans-serif;
 }
 
 .box__Menu {
@@ -10,13 +12,12 @@ body {
     justify-content: end;
     box-shadow: 0 0 7px gray;
     position: fixed;
-    z-index: 3;
+    top: 0;
 }
 
 .img__LogoMenu {
     width: 90px;
     height: 70px;
-    margin: 0;
     position: sticky;
     right: 92%;
 }
@@ -44,108 +45,98 @@ body {
     text-decoration: underline;
 }
 
-
-
-.box__imagenGrande {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 2;
-    box-shadow: 0 5px 10px gray;
-    margin-bottom: 5%;
-}
-
-.background-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('../IMG/MuchasTenis.jpg') no-repeat center center/cover;
-    filter: blur(7px);
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Superposición negra semitransparente */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-.overlay h1 {
-    font-family: sans-serif;
-    font-size: 7em; 
-    margin: 0;
-    font-style: italic;
-}
-
 .box__tenis {
-    margin-top: 40px;
-    margin-bottom: 40px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 5%;
+    box-sizing: border-box;
+    margin: auto;
+    width: 68%;
+    margin-top: 10vh;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px gray;
 }
 
-.link__teni {
-    text-decoration: none;
-    width: 17%;
+.img__teni {
+    margin-top: 3.2%;
+    margin-left: 10px;
+    height: 50vh;
+    width: 30%;
+    margin-right: 1%;
+    border-radius: 2px;
 }
 
-.item__tenis {
-    width: 100%;
-    height: 21rem;
-    box-shadow: 0 0 3px gray;
-    transition: box-shadow 0.2s ease;
-}
-
-.item__tenis:hover {
-    box-shadow: 0 0 0 1px black;
-    cursor: pointer;
-}
-
-.box__centrarTenis {
+.box__informaciontenis {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 2%;
+    width: 20em;
 }
 
-.img__tenis {
-    width: 50%;
-    height: 11rem;
-}
-
-.texto__descripcionTenis {
-    margin-top: 2px;
-    margin-left: 11%;
-    color: gray;
+.texto__informacion {
+    color: black;
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 20px;
+    margin: 5%;
+}
+
+.texto__ubicacion {
+    font-size: 12px;
+    color: gray;
 }
 
 .texto__precio {
-    color: black;
+    font-size: 25px;
     font-weight: bold;
-    font-size: 17px;
 }
 
-.box__contactos {
+.box__tallasBoton {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5%;
+    margin-top: 0;
+}
+
+.Tallas button {
     background-color: black;
+    border: 2px solid #fff;
+    color: lightgray;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+.Tallas button:hover {
+    background-color: gray;
+    color: black;
+}
+
+.button__agregarCarrito {
+    font-family: sans-serif;
+    font-size: 20px;
     width: 100%;
-    height: 15rem;
+    height: 8vh;
+    margin-top: 2%;
+    background-color: black;
+    color: lightgray;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+.button__agregarCarrito:hover {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
 }
 
 footer {
+    margin-top: 24vh;
     box-shadow: 0 0 10px gray;
     position: static;
 }
