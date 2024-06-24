@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
+
+body {
+    font-family:  sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.box__Menu {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 7px gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.img__LogoMenu {
+    width: 90px;
+    height: 70px;
+}
+
+.img__LogoMenu:hover {
+    cursor: pointer;
+}
+
+.box__Menu2 {
+    display: flex;
+    align-items: center;
+}
+
+.item__menu {
+    margin-right: 20px;
+}
+
+.texto__enlaceMenu {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.texto__enlaceMenu:hover {
+    text-decoration: underline;
+    
+}
+.box__Titulo{
+    margin: 30px;
+}
+.box__Principal{
+  margin-top: 10px ;
+  background-color: rgb(145, 145, 145);
+  padding: 5px;
+}
+.box__Formulario {
+  max-width: 600px;
+  margin: 80px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"]{
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="number"]{
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+select{
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.box__Principal2 {
+  background-color: rgb(241, 241, 241);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.box__Contacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 15px;
+  padding: 5px;
+  background-color: #d8d6d6;
+  border-radius: 10px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item__tenis {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  background-color: #fffcfc;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.item__tenis:hover {
+  background-color: #ececec;
+}
+
+.box__Contacto a {
+  text-align: start;
+  font-size: 17px;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #686d68;
+}
+
+footer{
+    position: static;
+    margin: 3px;
+}
+.Contactos {
+  width: 100%;
+}
+.footer {
+    width: 100%;
+    margin: auto;
+  }
+
+.footer-content {
+  background-color: black;
+  padding: 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-main {
+  margin: 10px 20px;
+}
+.footer-main h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+.footer-main p {
+  color: #ffffff;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+.social-links {
+  margin: 15px 0px;
+  display: flex;
+  gap: 8px;
+}
+.social-links a {
+  padding: 5px;
+  background-color: #dbd8e3;
+  border-radius: 5px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.social-links a:hover {
+  opacity: 0.7;
+}
+.social-links a i {
+  margin: 2px;
+  font-size: 1.1rem;
+  color: #201e1e;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 40px 20px;
+}
+.links p {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.links a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #dbd8e3;
+  transition: 0.5s all;
+}
+.links a:hover {
+  color: #303035;
+}
