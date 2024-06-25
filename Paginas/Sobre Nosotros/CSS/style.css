@@ -248,8 +248,7 @@ footer {
 .links {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  margin: 40px 20px;
+  width: 300px;
 }
 
 .links p {
@@ -270,6 +269,63 @@ footer {
 
 .links a:hover {
   color: #303035;
+}
+
+.texto__contactos {
+  font-family: Catamaran;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #dbd8e3;
+  padding: 2.5% 0;
+}
+
+.box__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #201e1e;
+  padding: 2%;
+  border-radius: 2px;
+}
+
+.box__textoForm {
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: Catamaran;
+  margin: 5% 0;
+}
+
+.txt__EmailForm {
+  border-radius: 0;
+  margin-bottom: 5%;
+  outline: none;
+}
+
+.texto__terminosPrivacidad {
+  color: white;
+  font-family: Catamaran;
+  margin-bottom: 5%;
+  font-size: 12px;
+}
+
+.btn__registrarse {
+  cursor: pointer;
+  background-color: white;
+  height: 15%;
+  color: black;
+  font-weight: bold;
+  font-family: Catamaran;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  border-radius: 0;
+}
+
+.btn__registrarse:hover {
+  background-color: #201e1e;
+  color: white;
+  border: 0;
+  box-shadow: 0 0 2.5px lightgray;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
