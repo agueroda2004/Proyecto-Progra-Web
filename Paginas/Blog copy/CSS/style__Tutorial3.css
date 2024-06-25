@@ -317,6 +317,7 @@ footer {
   transition-property: background-color;
   transition-duration: 0.4s;
   border-radius: 0;
+  border: 0;
 }
 
 .btn__registrarse:hover {
