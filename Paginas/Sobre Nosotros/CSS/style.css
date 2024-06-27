@@ -1,5 +1,3 @@
-
-
 body {
   background-color: #f4f4f4;
   margin: 0;
@@ -272,7 +270,7 @@ footer {
 }
 
 .texto__contactos {
-  font-family: Catamaran;
+
   font-size: 0.8rem;
   font-weight: 600;
   color: #dbd8e3;
@@ -292,7 +290,6 @@ footer {
   color: white;
   font-size: 1rem;
   font-weight: 100;
-  font-family: Catamaran;
   margin: 5% 0;
 }
 
@@ -304,7 +301,6 @@ footer {
 
 .texto__terminosPrivacidad {
   color: white;
-  font-family: Catamaran;
   margin-bottom: 5%;
   font-size: 12px;
 }
@@ -315,7 +311,6 @@ footer {
   height: 15%;
   color: black;
   font-weight: bold;
-  font-family: Catamaran;
   transition-property: background-color;
   transition-duration: 0.4s;
   border-radius: 0;
