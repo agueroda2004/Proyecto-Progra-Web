@@ -26,9 +26,6 @@ function displayCategories() {
     let select = $('#filter');
     let categories = [];
 
-    // Agregar una opción para mostrar todos los tenis
-    select.append('<option value="all">All</option>');
-
     // Obtener categorías únicas
     tenis.forEach(teni => {
         if (!categories.includes(teni.categories)) {
