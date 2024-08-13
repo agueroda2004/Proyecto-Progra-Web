@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    padding-top: 90px;
+    font-family: sans-serif;
 }
 
 .box__Menu {
@@ -10,13 +12,12 @@ body {
     justify-content: end;
     box-shadow: 0 0 7px gray;
     position: fixed;
-    z-index: 20;
+    top: 0;
 }
 
 .img__LogoMenu {
     width: 90px;
     height: 70px;
-    margin: 0;
     position: sticky;
     right: 92%;
 }
@@ -25,96 +26,113 @@ body {
     cursor: pointer;
 }
 
-.box__secundarioMenu {
+.box__tenis {
+    width: 80%;
     display: flex;
-    align-items: center;
-}
-
-.texto__enlaceMenu {
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 50px;
-    padding: 3px;
-}
-
-.texto__enlaceMenu:hover {
-    text-decoration: underline;
-}
-
-.div__ContenedorCalzado {
-    padding-top: 13vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img__Calzado {
-    width: 89%;
+    box-sizing: border-box;
+    flex: wrap;
+    margin: auto;
+    border-radius: 2px;
     box-shadow: 0 0 5px gray;
+    margin-bottom: 5%;
 }
 
-.Contenedor-categorias {
-    width: 12rem;
-    ;
-    margin: auto;
-    margin-top: 4vh;
-}
-
-#box__tenis {
-    margin: auto;
-    margin-top: 3%;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    max-width: 50%;
-}
-
-.link__teni {
-    text-decoration: none;
-    width: 12rem;
-}
-
-.item__tenis {
-    box-shadow: 0 0 3px gray;
-    transition: box-shadow 0.2s ease;
-    height: 300px;
-}
-
-.item__tenis:hover {
-    box-shadow: 0 0 0 1px black;
-    cursor: pointer;
-}
-
-.box__centrarTenis {
+.imagenes {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-.img__tenis {
+.img__teni {
+    width: 100%;
+    border-radius: 2px;
+    max-width: 500px;
+    margin: auto;
+
+}
+
+.box__informaciontenis {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
     width: 80%;
+    margin: auto;
 }
 
-.texto__descripcionTenis {
-    margin-top: 3%;
-    margin-left: 11%;
-    color: gray;
+.texto__descripcion {
+    padding: 5px;
+    padding-right: 7%;
+    font-size: 100%;
+}
+
+.texto__informacion {
+    color: black;
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.texto__ubicacion {
+    font-size: 12px;
+    color: gray;
 }
 
 .texto__precio {
-    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.tiempos_entrega div{
     font-weight: bold;
     font-size: 15px;
+    font-family: sans-serif;
+}
+.imagen_estrellas {
+    width: 90px;
+    margin: 0;
+}
+.box__tallasBoton {
+    display: flex;
+    flex-direction: column;
+}
+
+.Tallas button {
+    background-color: black;
+    border: 2px solid #fff;
+    color: lightgray;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 2.5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+.Tallas button:hover {
+    background-color: gray;
+    color: black;
+}
+
+.button__agregarCarrito {
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 50%;
+    height: 10vh;
+    margin-top: 2%;
+    background-color: black;
+    color: lightgray;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 2px;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    margin-bottom: 5%;
+}
+
+.button__agregarCarrito:hover {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
 }
 
 footer {
@@ -235,6 +253,15 @@ footer {
     box-shadow: 0 0 2.5px lightgray;
 }
 
+@media (max-width: 900px) {
+    .box__tenis {
+        flex-direction: column;
+    }
+    .button__agregarCarrito {
+        width: 90%;
+    }
+}
+
 .box__Menu {
     background-color: white;
     width: 100%;
@@ -302,11 +329,12 @@ footer {
 }
 
 .barra {
-    height: 2.7em;
     margin-right: 2vh;
 }
 
 #menuButton {
+    width: 4.7vh;
+    height: 4.8vh;
     font-size: 20px;
     border-radius: 5px;
     background-color: #ffffff;
@@ -324,9 +352,29 @@ footer {
     text-decoration: none;
     border: 1px solid lightgray;
     transition: background-color 0.3s;
+    height: 4vh;
+    width: 3.5vh;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 #closeButton:hover {
     background-color: lightgray;
     color: white;
+}
+
+#tenisReviews {
+    box-shadow: 0 0 2px gray;
+    padding: 10px;
+}
+
+.Titulo_resenna {
+    font-weight: bold;
+}
+
+.Contenedor_resenna {
+    box-shadow: 0 0 1px gray;
+    padding: 5px;
+    margin-top: 2%;
 }
